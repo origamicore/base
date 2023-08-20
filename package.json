@@ -1,0 +1,24 @@
+{
+  "name": "@origamicore/base",
+  "version": "0.1.0",
+  "description": "typescript origami base",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/origamiicore/ts-modules/tree/main/tsorimongo"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.5.1",
+    "password-validator": "^5.3.0",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "typescript": "^4.7.2"
+  }
+}
