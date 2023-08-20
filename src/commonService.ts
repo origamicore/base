@@ -17,7 +17,7 @@ export default class CommonService
         var sr='qwertyuiopasdfghjklzxcvbnm'
         for(var a=0;a<n;a++)
         {
-            var i=global.ori.Random(0,sr.length-1)
+            var i=this.random(0,sr.length-1)
             str+=sr[i]
         }
         if(str[0]=='0')
