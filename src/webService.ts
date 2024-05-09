@@ -2,7 +2,7 @@ const request = require('request');
 const querystring = require('querystring');
 export default class WebService
 {
-    static getData(url,data,header,func)
+    static getData(url:string,data:any=null,header:any=null,func:Function=null)
     {
         if(url.indexOf('?')==-1 && data)
         {
@@ -36,7 +36,7 @@ export default class WebService
             })
         }
     }
-    static get(url,data,header,func)
+    static get(url:string,data:any,header:any=null,func:Function=null)
     {
         if(url.indexOf('?')==-1 && data)
         {
@@ -70,7 +70,7 @@ export default class WebService
             })
         }
     }
-    static postData(url,data,header,func)    
+    static postData(url:string,data:any,header:any=null,func:any=null)    
     {
         var options:any = { method: 'POST',
             url: url,
@@ -99,7 +99,7 @@ export default class WebService
             })
         }        
     }
-    static postForm(url,data,header,func)  
+    static postForm(url:string,data:any,header:any=null,func:any=null)  
     {
         
         var formData = querystring.stringify(data);
@@ -144,7 +144,7 @@ export default class WebService
         }        
            
     }
-    static post(url,data,header,func)    
+    static post(url:string,data:any,header:any=null,func:any=null)    
     {
         var options:any = { method: 'POST',
             url: url,
